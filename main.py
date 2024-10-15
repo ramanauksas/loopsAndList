@@ -122,7 +122,26 @@ print(f"Prekes, kuriu likutis maziau nei penki: {low_inventory_list}")
 inventory.sort(key=lambda x:x[1])
 print(f"3 maziausi likuciai:{inventory[:3]}")
 
-# Exercise 8
+# # Exercise 8
+# character = input("Enter a character: ")
+# character = character.lower()
+# if character in "aeiou":
+#     print("This is vowel")
+# else:
+#     print("This is not a vowel")
+
+# Exercise 14
+allowed_guesses = 3
+secret_number = 4
+for i in range(0,3):
+    guess = int(input("Guess the number between 1 and 10. "))
+    if guess == secret_number:
+        print("you guessed the secret number!")
+        break
+    elif guess>secret_number:
+        print("The secret number is lower")
+    else:
+        print("The secret number is higher")
 
 
 
